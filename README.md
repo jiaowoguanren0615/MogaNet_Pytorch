@@ -7,6 +7,9 @@ The code mainly comes from official [source code](https://github.com/Westlake-AI
 
 ## Project Structure
 ```
+├── auxiliary_functions: help functions(It will not be used when you train model)
+    ├── get_flops.py: count MACs of model variants.
+    ├── plot_cam.py: Grad-CAM visualization
 ├── datasets: Load datasets
     ├── my_dataset.py: Customize reading data sets and define transforms data enhancement methods
     ├── split_data.py: Define the function to read the image dataset and divide the training-set and test-set
